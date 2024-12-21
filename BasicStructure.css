@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+header {
+    background-color: #000080;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+header a.logo{
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    float: left;
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+section div.flex-container{
+    display: flex;
+}
+section div.flex-container div{
+  width: 100%;
+  height: 400px;
+  font-size: 30px;
+}
+section div.flex-container div p{
+    font-size: 20px;
+}
+section div.flex-container div button{
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 100px;
+  background-color: #000080;
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  font-size: 16px;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+section div.flex-container div img{
+    width: 72%;
+    height: 400px;
+    object-fit: scale-down;
+    transition: transform 0.3s ease-in-out;
+}
+section div.flex-container div img:hover{
+    transform: scale(1.1);
+}
+footer {
+    background-color: #000080;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    position: relative;
+}
+footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+footer nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+footer nav ul li a:hover {
+    text-decoration: underline;
+}

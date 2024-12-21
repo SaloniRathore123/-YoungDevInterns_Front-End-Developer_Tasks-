@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+}
+
+.menu-area {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #e5e0de;
+    opacity: 0.8;
+    width: 100%;
+    height: 70px;
+    z-index: 10; 
+}
+
+.nav {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    margin-right: 15%;
+}
+
+.logo {
+    flex: 1 1 auto;
+    margin-left: 10%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #000;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+a {
+    margin: 15px;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(./Images/nature1.png);
+    opacity: 0.9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center center;
+    z-index: -1; 
+}
+
+section .content {
+    position: relative;
+    width: 100%;
+    color: #fff;
+    z-index: 2; 
+}
+
+section .content h1 {
+    font-size: 60px;
+    margin: 10px 0;
+    color: #fff;
+}
+
+section .content p {
+    width: 50%;
+    margin: auto;
+    line-height: 1.6;
+    color: #fff;
+}
+/* Large screens (desktops, 1200px and above) */
+@media (min-width: 1200px) {
+    .menu-area {
+        height: 80px;
+    }
+    section .content h1 {
+        font-size: 70px;
+    }
+    section .content p {
+        width: 50%;
+    }
+}
+
+/* Medium screens (tablets, 768px to 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .menu-area {
+        height: 70px;
+    }
+    .nav {
+        margin-right: 10%;
+    }
+    section .content h1 {
+        font-size: 50px;
+    }
+    section .content p {
+        width: 70%;
+    }
+}
+
+/* Small screens (mobile, 480px to 767px) */
+@media (max-width: 767px) and (min-width: 480px) {
+    .menu-area {
+        flex-direction: column;
+        height: auto;
+    }
+    .logo {
+        margin-left: 0;
+        text-align: center;
+        font-size: 22px;
+    }
+    .nav {
+        justify-content: center;
+        margin: 0;
+    }
+    a {
+        margin: 10px;
+        font-size: 14px;
+    }
+    section .content h1 {
+        font-size: 40px;
+    }
+    section .content p {
+        width: 80%;
+    }
+}
+
+/* Extra small screens (mobile, below 480px) */
+@media (max-width: 479px) {
+    .menu-area {
+        flex-direction: column;
+        height: auto;
+    }
+    .logo {
+        font-size: 18px;
+    }
+    .nav {
+        flex-direction: column;
+    }
+    a {
+        font-size: 12px;
+        margin: 5px;
+    }
+    section .content h1 {
+        font-size: 30px;
+    }
+    section .content p {
+        width: 90%;
+    }
+}

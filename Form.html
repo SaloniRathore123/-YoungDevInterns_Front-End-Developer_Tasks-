@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Form.css">
+    <title>Registration Form</title>
+</head>
+<body>
+  <script src="Form.js"></script>
+    <form id="userForm" onsubmit="return validateForm()">
+        <table border="1">
+          <tr>
+            <th colspan="2">Registration Form</th>
+          </tr>
+          <tr>
+            <td>First Name:</td>
+            <td>
+              <input type="text" id="firstname" name="firstname">
+              <span class="error" id="errorFirstname"></span>
+            </td>
+          </tr>
+          <tr>
+            <td>Last Name:</td>
+            <td>
+              <input type="text" id="lastname" name="lastname">
+              <span class="error" id="errorLastname"></span>
+            </td>
+          </tr>
+          <tr>
+            <td>Father's Name:</td>
+            <td>
+              <input type="text" id="fathername" name="fathername">
+              <span class="error" id="errorFathername"></span>
+            </td>
+          </tr>
+          <tr>
+            <td>Email:</td>
+            <td>
+              <input type="email" id="email" name="email">
+              <span class="error" id="errorEmail"></span>
+            </td>
+          </tr>
+          <tr>
+            <td>Password:</td>
+            <td>
+              <input type="password" id="password" name="password">
+              <span class="error" id="errorPassword"></span>
+            </td>
+          </tr>
+          <tr>
+            <td>Gender:</td>
+            <td>
+              <input type="radio" id="male" name="gender" value="Male"> Male
+              <input type="radio" id="female" name="gender" value="Female"> Female
+              <span class="error" id="errorGender"></span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2"><center><button type="submit" class="btn">Submit</button></center></td>
+          </tr>
+        </table>
+      </form>
+</body>
+</html>
